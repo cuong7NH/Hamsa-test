@@ -1,0 +1,40 @@
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'gothamhtf-book';
+    src: url('../font/gothamhtf-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+@font-face {
+    font-family: 'gothamhtf-bold';
+    src: url('../font/gothamhtf-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: 'gothamhtf-book', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+}

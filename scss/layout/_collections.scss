@@ -1,0 +1,39 @@
+
+
+.collections-area {
+    .hr-text {
+        height: 70px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 17.3;
+            color: #000;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+
+        }
+    }
+    .collections {
+        
+        display: flex;
+       
+        .collection-item {
+            flex: 0 0 20%;
+            max-width: 20%;
+            
+            overflow: hidden;
+            img {
+                
+                transform: scale(1.04);
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+
+            }
+        }
+    }
+}

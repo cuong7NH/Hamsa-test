@@ -1,0 +1,38 @@
+
+.modal-collection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 15px ;
+    visibility: hidden;
+
+    span.close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    img {
+        width: 100%;
+        max-width:600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.5s;
+    }
+    img.show-img-modal {
+        transform: translate(-50%, -50%) scale(0.9);
+
+    }
+}

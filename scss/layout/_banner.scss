@@ -1,0 +1,71 @@
+
+.banner-area {
+    display: flex;
+    @include maxWidth(768px) {
+        display: inherit;
+    }
+    .banner-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        color: #fefefe;
+        @include maxWidth(768px) {
+            max-width: 100%;
+        }
+        overflow: hidden;
+        img {
+            transform: scale(1.03);
+        }
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-transform: uppercase;
+
+            p.text-50 {
+                font-size: 50px;
+                @include maxWidth(992px) {
+                    font-size: 40px;
+                }
+                @include maxWidth(768px) {
+                    font-size: 50px;
+
+                }
+                @include maxWidth(576px) {
+                    font-size: 35px;
+                }
+            }
+            p.text-30 {
+                font-size: 30px;
+                @include maxWidth(992px) {
+                    font-size: 24px;
+                }
+                @include maxWidth(768px) {
+                    font-size: 30px;
+
+                }
+                @include maxWidth(576px) {
+                    font-size: 22px;
+                }
+            }
+            p.text-60 {
+                font-size: 60px;
+                @include maxWidth(992px) {
+                    font-size: 48px;
+                }
+                @include maxWidth(768px) {
+                    font-size: 60px;
+                }
+                @include maxWidth(576px) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    
+
+    
+}
+

@@ -1,0 +1,116 @@
+
+
+.contact {
+    padding: 40px 0;
+    .container {
+        max-width: 1280px;
+        padding: 0 15px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include maxWidth(768px) {
+            display: inherit;
+        }
+        .contact-item {
+            p {
+                font-weight: bold;
+                font-size: 17.3px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+.contact-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include maxWidth(768px) {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    form {
+        display: flex;
+        margin-bottom: 30px;
+
+        input {
+            display: inline-block;
+            height: 48px;
+            border: 1.5px solid #000;
+            padding: 10px 15px;
+            line-height: 20px;
+            font-size: 16px;
+            display: block;
+            width: calc(100% - 135px);
+            @include maxWidth(768px) {
+                
+                width: calc(100% - 55px)
+
+            }
+
+        }
+        button {
+            display: inline-block;
+            outline: none;
+            border: none;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            font-size: 17.3px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #000;
+            cursor: pointer;
+            margin-left: 5px;
+            &:hover {
+                transition: 0.3s;
+                opacity: 0.8;
+            }
+        }
+    }
+    ul.social-list {
+        @include maxWidth(768px) {
+                
+            justify-content: center;
+
+        }
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin-right: 30px;
+            a {
+                color: #000;
+                font-size: 35px;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.contact-right {
+    @include maxWidth(768px) {
+                
+        text-align: center;
+
+    }
+    ul {
+        
+        li {    
+            margin-bottom: 5px;
+            a {
+                text-transform: capitalize;
+                color: #000;
+                font-size: 12.3px;
+                font-weight: 600;
+                &:hover {
+                    opacity: 0.85;
+                }
+            }
+
+        }
+    }
+}
